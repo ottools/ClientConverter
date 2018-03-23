@@ -59,9 +59,16 @@ namespace ClientConverter
         {
             base.OnLoad(e);
 
-            Assembly assembly = Assembly.GetExecutingAssembly();
-            FileVersionInfo version = FileVersionInfo.GetVersionInfo(assembly.Location);
-            this.Text = "ClientConverter " + version.FileVersion;
+            try
+            {
+                Assembly assembly = Assembly.GetExecutingAssembly();
+                string version = FileVersionInfo.GetVersionInfo(assembly.Location).FileVersion;
+                Text = "ClientConverter" + version.Substring(0, version.LastIndexOf("."));
+            }
+            catch
+            {
+                Text = "ClientConverter";
+            }
         }
 
         private void InputVersionComboBox_SelectedIndexChanged(object sender, EventArgs e)

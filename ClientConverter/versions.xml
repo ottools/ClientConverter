@@ -30,4 +30,5 @@
 	<version value="1080" description="Client 10.80" dat="3B1A" spr="55A8BE2E" otb="0" />
 	<version value="1092" description="Client 10.92" dat="4086" spr="570742B8" otb="0" />
 	<version value="1093" description="Client 10.93" dat="40FF" spr="57161DEA" otb="0" />
+	<version value="1098" description="Client 10.98" dat="42A3" spr="57BBD603" otb="0" />
 </versions>

@@ -34,9 +34,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="OpenTibia, Version=0.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="7zip, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>OpenTibia\OpenTibia.dll</HintPath>
+      <HintPath>DLLs\7zip.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenTibia, Version=0.6.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLs\OpenTibia.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -84,9 +88,9 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
-    <Content Include="OpenTibia\OpenTibia.dll" />
+    <Content Include="DLLs\7zip.dll" />
+    <Content Include="DLLs\OpenTibia.dll" />
     <Content Include="versions.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
